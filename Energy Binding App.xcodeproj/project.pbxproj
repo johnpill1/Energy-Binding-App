@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2886202E2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886202D2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift */; };
+		288620302BB8630C0069F8B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886202F2BB8630C0069F8B2 /* ContentView.swift */; };
+		288620322BB863120069F8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288620312BB863120069F8B2 /* Assets.xcassets */; };
+		288620352BB863120069F8B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288620342BB863120069F8B2 /* Preview Assets.xcassets */; };
+		2886203C2BB8788A0069F8B2 /* ParticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886203B2BB8788A0069F8B2 /* ParticleModel.swift */; };
+		2886203E2BB879800069F8B2 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886203D2BB879800069F8B2 /* SlidersView.swift */; };
+		288620422BB87AE90069F8B2 /* TotalEnergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288620412BB87AE90069F8B2 /* TotalEnergyView.swift */; };
+		288620442BB87BBA0069F8B2 /* ButtonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288620432BB87BBA0069F8B2 /* ButtonImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2886202A2BB8630C0069F8B2 /* Energy Binding App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Energy Binding App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2886202D2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Energy_Binding_AppApp.swift; sourceTree = "<group>"; };
+		2886202F2BB8630C0069F8B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		288620312BB863120069F8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		288620342BB863120069F8B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2886203B2BB8788A0069F8B2 /* ParticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleModel.swift; sourceTree = "<group>"; };
+		2886203D2BB879800069F8B2 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
+		288620412BB87AE90069F8B2 /* TotalEnergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalEnergyView.swift; sourceTree = "<group>"; };
+		288620432BB87BBA0069F8B2 /* ButtonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		288620272BB8630C0069F8B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288620212BB8630C0069F8B2 = {
+			isa = PBXGroup;
+			children = (
+				2886202C2BB8630C0069F8B2 /* Energy Binding App */,
+				2886202B2BB8630C0069F8B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2886202B2BB8630C0069F8B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2886202A2BB8630C0069F8B2 /* Energy Binding App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2886202C2BB8630C0069F8B2 /* Energy Binding App */ = {
+			isa = PBXGroup;
+			children = (
+				2886202D2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift */,
+				288620402BB87A9C0069F8B2 /* Views */,
+				2886203F2BB87A900069F8B2 /* Models */,
+				288620312BB863120069F8B2 /* Assets.xcassets */,
+				288620332BB863120069F8B2 /* Preview Content */,
+			);
+			path = "Energy Binding App";
+			sourceTree = "<group>";
+		};
+		288620332BB863120069F8B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				288620342BB863120069F8B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2886203F2BB87A900069F8B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2886203B2BB8788A0069F8B2 /* ParticleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		288620402BB87A9C0069F8B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2886202F2BB8630C0069F8B2 /* ContentView.swift */,
+				2886203D2BB879800069F8B2 /* SlidersView.swift */,
+				288620412BB87AE90069F8B2 /* TotalEnergyView.swift */,
+				288620432BB87BBA0069F8B2 /* ButtonImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		288620292BB8630C0069F8B2 /* Energy Binding App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 288620382BB863120069F8B2 /* Build configuration list for PBXNativeTarget "Energy Binding App" */;
+			buildPhases = (
+				288620262BB8630C0069F8B2 /* Sources */,
+				288620272BB8630C0069F8B2 /* Frameworks */,
+				288620282BB8630C0069F8B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Energy Binding App";
+			productName = "Energy Binding App";
+			productReference = 2886202A2BB8630C0069F8B2 /* Energy Binding App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		288620222BB8630C0069F8B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					288620292BB8630C0069F8B2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 288620252BB8630C0069F8B2 /* Build configuration list for PBXProject "Energy Binding App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 288620212BB8630C0069F8B2;
+			productRefGroup = 2886202B2BB8630C0069F8B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				288620292BB8630C0069F8B2 /* Energy Binding App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		288620282BB8630C0069F8B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				288620352BB863120069F8B2 /* Preview Assets.xcassets in Resources */,
+				288620322BB863120069F8B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288620262BB8630C0069F8B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2886203C2BB8788A0069F8B2 /* ParticleModel.swift in Sources */,
+				2886203E2BB879800069F8B2 /* SlidersView.swift in Sources */,
+				288620302BB8630C0069F8B2 /* ContentView.swift in Sources */,
+				288620422BB87AE90069F8B2 /* TotalEnergyView.swift in Sources */,
+				288620442BB87BBA0069F8B2 /* ButtonImageView.swift in Sources */,
+				2886202E2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		288620362BB863120069F8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		288620372BB863120069F8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		288620392BB863120069F8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Energy Binding App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8X8KN2KDZ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jmp.Energy-Binding-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2886203A2BB863120069F8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Energy Binding App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8X8KN2KDZ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jmp.Energy-Binding-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		288620252BB8630C0069F8B2 /* Build configuration list for PBXProject "Energy Binding App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288620362BB863120069F8B2 /* Debug */,
+				288620372BB863120069F8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		288620382BB863120069F8B2 /* Build configuration list for PBXNativeTarget "Energy Binding App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				288620392BB863120069F8B2 /* Debug */,
+				2886203A2BB863120069F8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 288620222BB8630C0069F8B2 /* Project object */;
+}
