@@ -7,60 +7,70 @@
 
 import SwiftUI
 
-// TODO: Check that I don't need to convert the simple decimal values down - I think it definitlay has an effect!
-
-// TODO: STILL NOT MATCHING OUTPUT - FIND AN ONLINE CALCULATOR.
-
-
 struct ContentView: View {
+    @State var showSheet = false
     @State var totalEnergy = 0.0
-    @State var upscaledTotalEnergy = 0.0
     @State var sigma = 3.41e-10
     @State var epsilon = 1.65e-21
     @State var r = 6.82e-10
     @State var particles: [Particle] = []
-    let metGreen = Color(red: 0.62, green: 0.83, blue: 0.18)
     
     var body: some View {
         NavigationStack {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [metGreen, metGreen, .white, .white, .white, .white]), startPoint: .top, endPoint: .bottom)
-                    .ignoresSafeArea()
+                BackgroundColour()
                 VStack {
                     VStack {
-                        TotalEnergyView(totalEnergy: $upscaledTotalEnergy)
+                        TotalEnergyView(totalEnergy: $totalEnergy)
                         SlidersView(sigma: $sigma, epsilon: $epsilon, r: $r)
                         
                         List {
                             ForEach(particles.reversed(), id: \.id) { particle in
-                                HStack {
-                                    VStack{
-                                        HStack {
-                                            Text("u: ").italic().bold()
-                                            Text("\(particle.totalEnergy  * pow(10, 22), specifier: "%.1f")").bold().font(.title2)
-                                            Text("e-22").font(.subheadline)
-                                        }
-                                    }
-                                    
-                                    Spacer()
-                                    
-                                    VStack{
-                                        Text("σ: \(particle.sigma * pow(10, 10), specifier: "%.2f")e-10")
-                                        Text("ε: \(particle.epsilon  * pow(10, 21), specifier: "%.2f")e-21")
-                                        Text("r: \(particle.r  * pow(10, 10), specifier: "%.2f")e-10")
-                                    }
-                                    .font(.caption)
-                                }
+                                ParticleListItem(particle: particle)
                             }
                             .onDelete(perform: delete)
                         }
                     }
                     .overlay(alignment: .bottomTrailing){
-                        Button {
-                            addParticle()
-                        } label: {
-                            ButtonImageView(metGreen: metGreen)
+                        VStack {
+                            HStack {
+                                Button {
+                                    showSheet = true
+                                } label: {
+                                    ButtonImageView(color: .red, image: "atom")
+                                }
+                                .padding(.bottom)
+                            }
+                            Button {
+                                addParticle()
+                            } label: {
+                                ButtonImageView(color: Params.metGreen, image: "plus")
+                            }
                         }
+                    }
+                    .sheet(isPresented: $showSheet) {
+                        ZStack {
+                            Color(Params.metGreen)
+                                .edgesIgnoringSafeArea(.all)
+                            
+                            HStack {
+                                ForEach(Array(Params.elementValues), id: \.id) { element in
+                                    Image(element.name)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 75, height: 75)
+                                        .cornerRadius(10)
+                                        .shadow(color: .black, radius: 3)
+                                        .padding()
+                                        .onTapGesture {
+                                            sigma = element.sigma
+                                            epsilon = element.epsilon
+                                    }
+                                }
+                            }
+                        }
+                        .presentationDetents([.height(150), .medium, .large])
+                        .presentationDragIndicator(.automatic)
                     }
                 }
             }
@@ -72,11 +82,9 @@ struct ContentView: View {
         let repulsion = pow(attraction, 2)
         let energy = 4 * epsilon * (repulsion - attraction)
         print(energy)
-
-        particles.append(Particle(sigma: sigma, epsilon: epsilon, r: r, totalEnergy: energy))
         
+        particles.append(Particle(sigma: sigma, epsilon: epsilon, r: r, totalEnergy: energy))
         totalEnergy = calculateTotalEnergy()
-        upscaleTotalEnergy()
     }
     
     func calculateTotalEnergy() -> Double {
@@ -88,14 +96,15 @@ struct ContentView: View {
         return energy
     }
     
-    func upscaleTotalEnergy() {
-        upscaledTotalEnergy = totalEnergy * pow(10, 22)
-        print("Upscaled total energy: \(upscaledTotalEnergy)")
-    }
-    
     func delete(at offsets: IndexSet) {
-        particles.remove(atOffsets: offsets)
+        var offsetValue: Int = 0
+        let arraySize = particles.count - 1
+        for offset in offsets {
+            offsetValue = offset
+                   }
+        particles.remove(at: (arraySize - offsetValue))
         totalEnergy = calculateTotalEnergy()
+
     }
 }
 
@@ -105,3 +114,5 @@ struct ContentView: View {
 
 
 
+
+// Element tile images: https://sciencenotes.org/periodic-table-element-cells/

@@ -13,9 +13,9 @@ struct TotalEnergyView: View {
 
     var body: some View {
         VStack {
-            Text("\(totalEnergy, specifier: "%.1f")")
-                .font(.system(size: 60)).fontWeight(.heavy)
-            Text("Total Energy e-22 J")
+            Text("\(totalEnergy, format: .number.notation(.scientific))")
+                .font(.system(size: 36)).fontWeight(.heavy)
+            Text("Total Energy").italic()
         }
         .padding(20)
         .padding(.top, 20)

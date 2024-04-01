@@ -15,6 +15,9 @@
 		2886203E2BB879800069F8B2 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886203D2BB879800069F8B2 /* SlidersView.swift */; };
 		288620422BB87AE90069F8B2 /* TotalEnergyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288620412BB87AE90069F8B2 /* TotalEnergyView.swift */; };
 		288620442BB87BBA0069F8B2 /* ButtonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288620432BB87BBA0069F8B2 /* ButtonImageView.swift */; };
+		288620462BBB49980069F8B2 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288620452BBB49980069F8B2 /* Params.swift */; };
+		288620492BBB53340069F8B2 /* BackgroundColour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288620482BBB53340069F8B2 /* BackgroundColour.swift */; };
+		2886204B2BBB54D00069F8B2 /* ParticleListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886204A2BBB54D00069F8B2 /* ParticleListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		2886203D2BB879800069F8B2 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		288620412BB87AE90069F8B2 /* TotalEnergyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalEnergyView.swift; sourceTree = "<group>"; };
 		288620432BB87BBA0069F8B2 /* ButtonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonImageView.swift; sourceTree = "<group>"; };
+		288620452BBB49980069F8B2 /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		288620482BBB53340069F8B2 /* BackgroundColour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColour.swift; sourceTree = "<group>"; };
+		2886204A2BBB54D00069F8B2 /* ParticleListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				2886202D2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift */,
+				288620472BBB49A30069F8B2 /* Helper */,
 				288620402BB87A9C0069F8B2 /* Views */,
 				2886203F2BB87A900069F8B2 /* Models */,
 				288620312BB863120069F8B2 /* Assets.xcassets */,
@@ -88,11 +95,21 @@
 			isa = PBXGroup;
 			children = (
 				2886202F2BB8630C0069F8B2 /* ContentView.swift */,
+				2886204A2BBB54D00069F8B2 /* ParticleListItem.swift */,
 				2886203D2BB879800069F8B2 /* SlidersView.swift */,
 				288620412BB87AE90069F8B2 /* TotalEnergyView.swift */,
 				288620432BB87BBA0069F8B2 /* ButtonImageView.swift */,
+				288620482BBB53340069F8B2 /* BackgroundColour.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		288620472BBB49A30069F8B2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				288620452BBB49980069F8B2 /* Params.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,10 +183,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2886203C2BB8788A0069F8B2 /* ParticleModel.swift in Sources */,
+				288620462BBB49980069F8B2 /* Params.swift in Sources */,
 				2886203E2BB879800069F8B2 /* SlidersView.swift in Sources */,
 				288620302BB8630C0069F8B2 /* ContentView.swift in Sources */,
 				288620422BB87AE90069F8B2 /* TotalEnergyView.swift in Sources */,
+				288620492BBB53340069F8B2 /* BackgroundColour.swift in Sources */,
 				288620442BB87BBA0069F8B2 /* ButtonImageView.swift in Sources */,
+				2886204B2BBB54D00069F8B2 /* ParticleListItem.swift in Sources */,
 				2886202E2BB8630C0069F8B2 /* Energy_Binding_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

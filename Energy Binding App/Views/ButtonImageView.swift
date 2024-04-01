@@ -9,17 +9,19 @@ import SwiftUI
 
 
 struct ButtonImageView: View {
-    let metGreen: Color
+    let color: Color
+    let image: String
     
     var body: some View {
         HStack {
-            Image(systemName: "atom")
+            Image(systemName: image)
                 .font(.system(size: 35))
         }
-        .padding(10)
-        .background(metGreen)
+        .frame(width: 65, height: 65)
+        .background(color)
         .foregroundColor(.white)
-        .cornerRadius(100)
+        .clipShape(Circle())        
+        .shadow(color: .black, radius: 3)
         .padding(.trailing, 20)
         .padding(.bottom, -10)
     }

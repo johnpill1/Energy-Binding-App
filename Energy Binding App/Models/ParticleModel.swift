@@ -15,3 +15,12 @@ struct Particle {
     let r: Double
     let totalEnergy: Double
 }
+
+
+struct ElementValues {
+    let id = UUID()
+    let name: String
+    let sigma: Double
+    let epsilon: Double
+}
+
