@@ -108,6 +108,10 @@ struct ContentView: View {
     }
 }
 
+
+
+
+
 #Preview {
     ContentView()
 }
@@ -116,3 +120,5 @@ struct ContentView: View {
 
 
 // Element tile images: https://sciencenotes.org/periodic-table-element-cells/
+
+
